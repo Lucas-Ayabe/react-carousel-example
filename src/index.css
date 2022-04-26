@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(calc(100% - 2rem), 50rem);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: 3.5em;
+}
+
+.flow {
+  --space: 1em;
+}
+
+.flow > * + * {
+  margin-top: var(--space, 1em);
+}
